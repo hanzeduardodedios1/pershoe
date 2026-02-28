@@ -1,51 +1,11 @@
-# =========================
-# Security & Secrets
-# =========================
-.env
-.env.*
-secrets.json
-*.pem
+# --- Security & Secrets ---
+backend/.env
+backend/serviceAccountKey.json
 
-# =========================
-# Python / FastAPI
-# =========================
-**/__pycache__/
-**/*.py[cod]
-**/*$py.class
-**/venv/
-**/env/
-**/.pytest_cache/
-**/.python-version
-requirements.txt.log
+# --- Python Virtual Environment ---
+backend/venv/
+venv/
 
-# =========================
-# Flutter / Dart
-# =========================
-**/build/
-**/.dart_tool/
-**/.flutter-plugins
-**/.flutter-plugins-dependencies
-**/.pub-cache/
-**/.pub/
-**/ios/Pods/
-**/ios/.generated/
-**/android/app/src/main/res/raw/
-**/*.symbols
-**/*.pks
-
-# =========================
-# Database
-# =========================
-*.db
-*.sqlite3
-**/data/pgdata/
-
-# =========================
-# IDEs & OS
-# =========================
-.vscode/
-.idea/
-*.swp
-*.swo
-.DS_Store
-Thumbs.db
+# --- Python Cache (Hidden system files) ---
+backend/__pycache__/
+*.pyc
